@@ -39,6 +39,7 @@ let &t_EI = "\e[2 q"
 
 " Source custom files.
 source ~/.vim/maps.vim
+source ~/.vim/statusline.vim
 
 " Automatically install Vim Plug if doesn't exist.
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'

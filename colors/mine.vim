@@ -20,3 +20,5 @@ hi Visual ctermbg=lightgray ctermfg=black
 
 hi cConstant ctermfg=lightmagenta
 
+hi StatusLineFileType ctermbg=brown ctermfg=white
+
