@@ -7,5 +7,4 @@ set statusline+=\ %m
 set statusline+=\%=
 set statusline+=\ %P
 
-s
 
