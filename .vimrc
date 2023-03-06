@@ -1,6 +1,7 @@
 " General.
 colorscheme mine
 set autoindent
+set autochdir
 set colorcolumn=80
 set cursorline
 set expandtab
@@ -9,6 +10,7 @@ set ignorecase
 set incsearch
 set list
 set listchars=tab:>\ ,trail:·
+set linebreak
 set linespace=3
 set noswapfile
 set nowrap
@@ -18,10 +20,6 @@ set shiftwidth=4
 set smartcase
 set tabstop=4
 set wildmode=list:longest
-
-" TODO
-" Also decide if g:netrw_header=0
-" It says there might be an error
 
 " look up *g:netrw_browse_split*
 
@@ -40,6 +38,7 @@ let &t_EI = "\e[2 q"
 " Source custom files.
 source ~/.vim/maps.vim
 source ~/.vim/statusline.vim
+source ~/.vim/localvimrc.vim
 
 " Automatically install Vim Plug if doesn't exist.
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
@@ -50,13 +49,11 @@ endif
 
 " Plugins.
 call plug#begin()
-
 Plug 'vim-scripts/AutoComplPop'
-
 call plug#end()
 
 " Autocommands.
 augroup OnSave
-    au!
+    autocmd!
     autocmd BufWritePost * :%s/\s\+$//e
 augroup END
