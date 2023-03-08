@@ -17,6 +17,7 @@ set nowrap
 set number relativenumber
 set scrolloff=8
 set shiftwidth=4
+set shortmess-=S " displays search count.
 set smartcase
 set tabstop=4
 set wildmode=list:longest
