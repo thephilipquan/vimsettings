@@ -5,7 +5,7 @@ set autochdir
 set colorcolumn=80
 set cursorline
 set expandtab
-set hidden
+set nohidden
 set ignorecase
 set incsearch
 set list
@@ -22,11 +22,15 @@ set smartcase
 set tabstop=4
 set wildmode=list:longest
 
-" look up *g:netrw_browse_split*
+let g:netrw_banner = 0
+let g:netrw_preview  = 1
+let g:netrw_liststyle = 3
+let g:netrw_sizestyle = "H"
+let g:netrw_winsize = 20
+let g:netrw_keepdir = 0
 
 " Turns off blinking.
 set t_vb=
-set vb t_vb=
 
 " Set cursor type.
 " SI = Insert Mode
