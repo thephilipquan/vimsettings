@@ -1,3 +1,9 @@
+if exists('g:toggle_comment')
+    finish
+endif
+
+let g:toggle_comment = 1
+
 let s:comment_map = {
             \ 'c': '\/\/',
             \ 'cpp': '\/\/',

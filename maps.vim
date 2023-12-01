@@ -7,7 +7,7 @@ vnoremap <C-_> :call ToggleComment()<Enter>
 nnoremap <Space> <Nop>
 
 let mapleader = " "
-nnoremap <leader>e :Lexplore<Enter>
+nnoremap <leader>e :Explore<Enter>
 nnoremap <leader>n :$tabnew<Enter>
 nnoremap <leader>t <C-w>T
 nnoremap <leader>h <C-w>h

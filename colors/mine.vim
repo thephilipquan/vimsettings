@@ -5,6 +5,8 @@ hi Constant ctermfg=yellow
 hi CursorLine cterm=none
 hi CursorLineNR cterm=bold ctermfg=gray
 hi Function ctermfg=lightyellow
+hi Folded ctermbg=none
+hi FoldColumn ctermfg=darkblue ctermbg=none
 hi Identifier ctermfg=lightcyan
 hi LineNr ctermfg=darkgray
 hi MatchParen ctermbg=darkcyan

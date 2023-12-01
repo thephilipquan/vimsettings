@@ -1,13 +1,12 @@
 augroup SourceLocalVimrc
     autocmd!
-    autocmd VimEnter * call F()
+    autocmd BufEnter * call s:F()
 augroup END
 
-function F()
+function! s:F()
     let path = expand("%:p:h")."/.vimrc"
     try
         execute "source ".l:path
-        echomsg "Successfully loaded local vimrc."
     catch
     endtry
 endfunction

@@ -1,17 +1,20 @@
 " General.
-colorscheme mine
+runtime colors/mine.vim
 set autoindent
 set autochdir
+set breakindent
 set colorcolumn=80
 set cursorline
-set expandtab
-set nohidden
+set foldmethod=syntax
+set foldenable
+set hidden
 set ignorecase
 set incsearch
 set list
 set listchars=tab:>\ ,trail:·
 set linebreak
 set linespace=3
+set noexpandtab
 set noswapfile
 set nowrap
 set number relativenumber
@@ -22,12 +25,20 @@ set smartcase
 set tabstop=4
 set wildmode=list:longest
 
-let g:netrw_banner = 0
-let g:netrw_preview  = 1
-let g:netrw_liststyle = 3
-let g:netrw_sizestyle = "H"
-let g:netrw_winsize = 20
-let g:netrw_keepdir = 0
+let supressBanner = 0
+let g:netrw_banner = supressBanner
+
+let verticalSplitPreview = 1
+let g:netrw_preview  = verticalSplitPreview
+
+let treeStyle = 0
+let g:netrw_liststyle = treeStyle
+
+let humanReadableSize = "H"
+let g:netrw_sizestyle = humanReadableSize
+
+let windowWidthPercentage = 20
+let g:netrw_winsize = windowWidthPercentage
 
 " Turns off blinking.
 set t_vb=
@@ -41,6 +52,7 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
 " Source custom files.
+source ~/.vim/autofoldcolumn.vim
 source ~/.vim/maps.vim
 source ~/.vim/statusline.vim
 source ~/.vim/localvimrc.vim
@@ -58,7 +70,7 @@ Plug 'vim-scripts/AutoComplPop'
 call plug#end()
 
 " Autocommands.
-augroup OnSave
+augroup RemoveExtraSpace
     autocmd!
     autocmd BufWritePost * :%s/\s\+$//e
 augroup END

@@ -1,1 +1,12 @@
 Use the * register to paste from system.
+
+TODO
+dictionary
+thesaurus thesaurusfunc
+ins-completion
+omnifunc compl-omni compl-function
+
+complete-functions: topic on all completion functions
+
+breakindentopt formatlistpat
+
