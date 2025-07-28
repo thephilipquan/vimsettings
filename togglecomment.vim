@@ -12,6 +12,7 @@ let s:comment_map = {
             \ 'sh': '#',
             \ 'sql': '#',
             \ 'python': '#',
+            \ 'gdscript': '#',
             \ 'vim': '"',
             \ }
 
