@@ -9,7 +9,8 @@ nnoremap <Space> <Nop>
 let mapleader = " "
 nnoremap <leader>e :Explore<Enter>
 nnoremap <leader>n :$tabnew<Enter>
-nnoremap <leader>t <C-w>T
+nnoremap <leader>f :FZF<Enter>
+nnoremap <leader>s :Rg<Space>
 
 " overrides
 nnoremap [c [czz

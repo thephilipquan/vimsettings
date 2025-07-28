@@ -67,6 +67,8 @@ endif
 " Plugins.
 call plug#begin()
 Plug 'vim-scripts/AutoComplPop'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Autocommands.
