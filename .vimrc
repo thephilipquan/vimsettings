@@ -74,3 +74,7 @@ augroup RemoveExtraSpace
     autocmd!
     autocmd BufWritePost * :%s/\s\+$//e
 augroup END
+
+if &diff
+  autocmd VimEnter * normal! gg]c
+endif
