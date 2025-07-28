@@ -25,3 +25,8 @@ hi cConstant ctermfg=lightmagenta
 hi StatusLineFileType ctermbg=brown ctermfg=white
 hi StatusLineModified ctermbg=red ctermfg=white
 
+hi DiffAdd ctermfg=black
+hi DiffDelete ctermfg=black
+hi DiffChange ctermfg=black
+hi DiffText ctermfg=black
+
