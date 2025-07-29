@@ -81,6 +81,7 @@ augroup END
 autocmd FileType markdown :setlocal wrap
 autocmd BufWritePost .vimrc :source %
 
+" If opened in diff mode, go to first commit.
 if &diff
   autocmd VimEnter * normal! gg]c
 endif
