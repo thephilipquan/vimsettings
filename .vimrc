@@ -79,6 +79,7 @@ augroup END
 
 " wrap markdown files.
 autocmd FileType markdown :setlocal wrap
+autocmd BufWritePost .vimrc :source %
 
 if &diff
   autocmd VimEnter * normal! gg]c
