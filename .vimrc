@@ -77,6 +77,9 @@ augroup RemoveExtraSpace
     autocmd BufWritePost * :%s/\s\+$//e
 augroup END
 
+" wrap markdown files.
+autocmd FileType markdown :setlocal wrap
+
 if &diff
   autocmd VimEnter * normal! gg]c
 endif
